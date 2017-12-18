@@ -38,8 +38,8 @@ public class Festival {
 	
 	
 /*
- * Elimina una actuacion del Festival
- * @param
+ *Elimina una actuacion del Festival
+ *@param
  */
 	public void eliminarActuacion(String grupo) {
 		for (int i = 0; i < actuaciones.size(); i++) {
