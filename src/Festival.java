@@ -42,18 +42,19 @@ public class Festival {
  * @param
  */
 	public void eliminarActuacion(String grupo) {
-		Iterator<Actuacion> i = actuaciones.iterator();
-		while(i.hasNext()) {
-			Actuacion actu = i.next();
-// Si el nombre del grupo coincide, eliminar el grupo
-			if(actu.getNombreGrupo().equals(grupo)) {
-				i.remove();
-				
-				System.out.println("El grupo " + actu.getNombreGrupo() + " ha sido eliminado correctamente");
+		for (int i = 0; i < actuaciones.size(); i++) {
+			if(this.actuaciones.get(i).getNombreGrupo().equals(grupo)) {
+				Actuacion actu = this.actuaciones.get(i);
+				actu.setNombreGrupo(grupo);
+				this.actuaciones.set(i, actu);
 			}
 		}
-		
 	}
+	
+	
+/*
+ * 
+ */
 	
 	
 	
