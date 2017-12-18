@@ -49,6 +49,15 @@ public class MainActuacion {
 		festival.addActuacion(a3);
 		
 		festival.mostrarInfo();
+		
+		
+/*
+ * 	Crear una eliminacion de actuacion		
+ */
+		System.out.println("Introduce un grupo para eliminar del festival");
+		String grupo = scan.nextLine();
+		
+		festival.eliminarActuacion(grupo);
 	}
 
 }
